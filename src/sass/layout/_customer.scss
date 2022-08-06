@@ -1,0 +1,11 @@
+.customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer__photo {
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
