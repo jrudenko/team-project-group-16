@@ -1,1 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    font-family: var(--main-font), sans-serif;
+    font-size: 16px;
+    line-height: 1.76;
+    color: var(--main-text-color);
+}

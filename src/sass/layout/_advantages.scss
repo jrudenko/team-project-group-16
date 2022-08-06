@@ -1,0 +1,131 @@
+/* Advantages section */
+
+.advantages {
+  background-color: var(--secondary-bg-color);
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.advantages__box {
+  margin-top: 16px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 230px;
+    height: 96px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__subtitle {
+  height: 56px;
+
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 65px;
+
+    margin-bottom: 16px;
+  }
+}
+
+.advantages__subtitle--basic {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.advantages__text--start {
+  @media screen and (min-width: 768px) {
+    width: 180px;
+
+    margin-right: 4px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+
+    margin-right: 115px;
+  }
+}
+
+.advantages__text--second {
+  @media screen and (min-width: 768px) {
+    width: 162px;
+
+    margin-right: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 317px;
+
+    margin-right: 80px;
+  }
+}
+
+.advantages__text--last {
+  @media screen and (min-width: 768px) {
+    width: 159px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+  }
+}
+
+.advantages__icon {
+  fill: var(--icons-bg-color);
+}
