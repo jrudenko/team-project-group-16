@@ -8,4 +8,41 @@
 .customer__photo {
     margin-top: 60px;
     margin-bottom: 32px;
+
+    width: 85px;
+    height: 85px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
+
+.customer__text {
+    margin-top: 0;
+    margin-bottom: 17px;
+
+    background-color: var(--additional-bg-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+        
+    text-align: center;
+    
+    color: var(--main-text-color);
+}
+
+.customer__name {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+       
+    text-align: center;
+    
+    color: var(--main-text-color);
+}
+
+
