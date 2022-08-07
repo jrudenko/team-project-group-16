@@ -39,10 +39,8 @@
 // header (btn"Buy now" - class="button button--header")
 
 .button--header {
-    @include respond-to('small') {
-        width: 209px;
-    }
-
+    width: 209px;
+    
     @include respond-to('medium') {
         width: 186px;
     }
@@ -69,6 +67,7 @@
 }
 
 .button--pink {
+    height: 24px;
     width: 62px;
 
     @include respond-to('large') {
@@ -95,9 +94,7 @@
 // button--contacts (btn"Franchise" - class="button button--white"  btn"Our Locations" - class="button button--colored")
 
 .button--white {
-    @include respond-to('small') {
-        width: 161px;
-    }
+    width: 161px;
 
     @include respond-to('medium') {
         width: 174px;
@@ -109,9 +106,7 @@
 }
 
 .button--colored {
-    @include respond-to('small') {
-        width: 161px;
-    }
+    width: 161px;
 
     @include respond-to('medium') {
         width: 192px;
