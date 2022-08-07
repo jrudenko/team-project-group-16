@@ -24,6 +24,7 @@
   display: inline-block;
   align-items: center;
   vertical-align: middle;
+  padding: 0;
   height: 44px;
   font-family: "DM Sans";
   font-style: normal;
