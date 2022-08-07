@@ -19,6 +19,7 @@
 .customer__text {
     margin-top: 0;
     margin-bottom: 17px;
+    padding: 43px 58px 26px 65px;
 
     background-color: var(--additional-bg-color);
     font-style: normal;
@@ -29,6 +30,7 @@
     text-align: center;
     
     color: var(--main-text-color);
+    background: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
 }
 
 .customer__name {
