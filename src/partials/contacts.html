@@ -1,13 +1,13 @@
 <!-- Секция Contacts -->
 
 <section class="contacts section">
-  <div container>
+  <div class="contacts__container">
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <span class="contacts__subtitle">Cafe</span>
+        <span class="contacts__title">CAFE</span>
         <div class="location">
-          <h3 class="contacts__title">Chicago</h3>
+          <h3 class="contacts__subtitle">Chicago</h3>
           <p class="contacts__text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
@@ -15,29 +15,33 @@
 
         <ul class="shedule">
           <li class="shedule__item">
-            <h3 class="shedule__title">Monday - Friday</h3>
+            <h3 class="shedule__subtitle">Monday - Friday</h3>
             <p class="shedule__text">06:00 AM - 10:00 PM</p>
           </li>
           <li class="shedule__item">
-            <h3 class="shedule__title">Saturday - Sunday</h3>
+            <h3 class="shedule__subtitle">Saturday - Sunday</h3>
             <p class="shedule__text">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
         <ul class="contacts-box">
           <li class="contacts-box__item">
-            <a href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a href="tel:+610383766284" class="contacts-box__link"
+              >+61(0) 383 766 284</a
+            >
           </li>
           <li class="contacts-box__item">
-            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a href="mailto:noreply@envato.com" class="contacts-box__link"
+              >noreply@envato.com</a
+            >
           </li>
         </ul>
       </li>
 
       <li class="contacts__item">
-        <span class="contacts__subtitle">FOOD TRUCK</span>
+        <span class="contacts__title contacts__title--accent">FOOD TRUCK</span>
         <div class="location">
-          <h3 class="contacts__title">Los Angeles</h3>
+          <h3 class="contacts__subtitle">Los Angeles</h3>
           <p class="contacts__text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
@@ -45,29 +49,33 @@
 
         <ul class="shedule">
           <li class="shedule__item">
-            <h3 class="shedule__title">Monday - Friday</h3>
+            <h3 class="shedule__subtitle">Monday - Friday</h3>
             <p class="shedule__text">06:00 AM - 10:00 PM</p>
           </li>
           <li class="shedule__item">
-            <h3 class="shedule__title">Saturday - Sunday</h3>
+            <h3 class="shedule__subtitle">Saturday - Sunday</h3>
             <p class="shedule__text">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
         <ul class="contacts-box">
           <li class="contacts-box__item">
-            <a href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a href="tel:+610383766284" class="contacts-box__link"
+              >+61(0) 383 766 284</a
+            >
           </li>
           <li class="contacts-box__item">
-            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a href="mailto:noreply@envato.com" class="contacts-box__link"
+              >noreply@envato.com</a
+            >
           </li>
         </ul>
       </li>
 
       <li class="contacts__item">
-        <span class="contacts__subtitle">Cafe</span>
+        <span class="contacts__title">CAFE</span>
         <div class="location">
-          <h3 class="contacts__title">New York</h3>
+          <h3 class="contacts__subtitle">New York</h3>
           <p class="contacts__text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
@@ -75,43 +83,44 @@
 
         <ul class="shedule">
           <li class="shedule__item">
-            <h3 class="shedule__title">Monday - Friday</h3>
+            <h3 class="shedule__subtitle">Monday - Friday</h3>
             <p class="shedule__text">06:00 AM - 10:00 PM</p>
           </li>
           <li class="shedule__item">
-            <h3 class="shedule__title">Saturday - Sunday</h3>
+            <h3 class="shedule__subtitle">Saturday - Sunday</h3>
             <p class="shedule__text">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
         <ul class="contacts-box">
           <li class="contacts-box__item">
-            <a href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a href="tel:+610383766284" class="contacts-box__link"
+              >+61(0) 383 766 284</a
+            >
           </li>
           <li class="contacts-box__item">
-            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <a href="mailto:noreply@envato.com" class="contacts-box__link"
+              >noreply@envato.com</a
+            >
           </li>
         </ul>
       </li>
     </ul>
 
-    <ul class="contacts-btn">
-      <li>
-        <button type="button" class="button button--colored">
-          Our Location
-          <svg class="contacts-btn__icon" width="4" height="8">
-            <use href="./images/icons.svg#icon_button"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="button button--white">
-          Franchise
-          <svg class="contacts-btn__icon" width="4" height="8">
-            <use href="./images/icons.svg#icon_button"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <div class="contacts-btn">
+      <button type="button" class="button button--colored">
+        Our Location
+        <svg class="contacts-btn__icon" width="4" height="8">
+          <use href="./images/icons.svg#icon_button"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="button button--white">
+        Franchise
+        <svg class="contacts-btn__icon" width="4" height="8">
+          <use href="./images/icons.svg#icon_button"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
