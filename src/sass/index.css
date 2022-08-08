@@ -290,6 +290,62 @@ a {
   fill: var(--icons-bg-color);
 }
 
+.container {
+  width: 100% x;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+source {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 43px;
+}
+
+.gellery_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .products__container {
   margin-left: auto;
   margin-right: auto;
