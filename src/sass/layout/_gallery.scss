@@ -1,0 +1,9 @@
+.container {
+    @include container ($wd: 100%, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+    margin-right: 94px;
+    margin-left: 94px;
+    outline: 1px solid red;
+    @include respond-to('medium') {
+        margin: 0;
+    }
+}
