@@ -1,31 +1,31 @@
-// .container {
-//     @include container ($wd: 100%x, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+.container {
+    @include container ($wd: 100%x, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
 
-//     @include respond-to('small') {
-//         @include container ($wd: 320px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-//     }
+    @include respond-to('small') {
+        @include container ($wd: 320px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+    }
 
-//     @include respond-to('medium') {
-//         @include container ($wd: 768px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-//     }
+    @include respond-to('medium') {
+        @include container ($wd: 768px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+    }
 
-//     @include respond-to('large') {
-//         @include container ($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-//     }
-// }
+    @include respond-to('large') {
+        @include container ($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+    }
+}
 
-// source {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-// }
-// .thumb {
-//     overflow: hidden;
-//     border: 1px solid transparent;
-//     border-radius: 20px;
-//     width: 43px;    
-// }
-.row {
+source {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.thumb {
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 43px;    
+}
+ .gellery_row {
     display: flex;
     align-items: center;
     justify-content: center;
