@@ -1,29 +1,40 @@
 // Footer//
 //Break points
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;
 
+$mobile-max: $tablet - 1;
+$tablet-max: $desktop - 1;
+
+/////////
 .footer {
   background-color: var(--secondary-bg-color);
   padding-top: 40px;
 
-  @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     padding-top: 60px;
   }
 }
 .footer__container {
   padding-bottom: 40px;
   padding-left: 20px;
-  padding-right: 20px; 
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
-  @include respond-to('medium') {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: $tablet;
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 60px;
+    width: $desktop;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -54,13 +65,13 @@
     margin-bottom: 12px;
   }
 
-    @include respond-to('medium') {
+  @media screen and (min-width: $tablet) {
     font-size: 26px;
     line-height: 1.154;
     letter-spacing: 0.04em;
   }
 
-    @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.133;
   }
@@ -80,13 +91,13 @@
     width: 340px;
   }
 
-    @include respond-to('medium') {
+  @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: 1.146;
     letter-spacing: 0.06em;
   }
 
-    @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     font-size: 58px;
     line-height: 1.138;
   }
@@ -101,12 +112,12 @@
   border-top: 1px solid #e1e1e1;
   text-align: center;
 
-  @include respond-to('medium') {
+  @media screen and (min-width: $tablet) {
     padding-top: 8px;
     padding-bottom: 8px;
   }
 
-    @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     padding-top: 7px;
     padding-bottom: 4px;
   }
@@ -148,11 +159,11 @@
   display: flex;
   justify-content: flex-end;
 
-  @include respond-to('medium') {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
 
-    @include respond-to('large') {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
