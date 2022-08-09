@@ -4,6 +4,14 @@
   align-items: center;
 
   background-color: var(--complementary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px 16px;
+  }
 }
 
 .header__logo {
@@ -24,6 +32,7 @@
   justify-content: center;
   gap: 35px;
 }
+
 .nav__link {
   font-weight: 700;
   font-size: 14px;
@@ -32,6 +41,11 @@
   align-items: center;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 
 .button--header {
@@ -39,11 +53,52 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+    width: 160px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
 }
 
 // Мобільне меню
+
+.mobile-menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--mob-menu-bg-color);
+
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  transform: translateX(100%);
+  transition: transform var(--timing-transition);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
 
 .mobile-menu__btn {
   z-index: 1000;
@@ -51,7 +106,7 @@
   border: none;
   margin-left: auto;
   padding: 0;
-  margin-bottom: 27px;
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -65,43 +120,6 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-}
-
-.mobile-menu {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 250px;
-  height: 502px;
-
-  background-color: var(--mob-menu-bg-color);
-
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  transform: translateX(200%);
-  transition: transform var(--timing-transition);
-
-  &.is-open {
-    transform: translateX(30%);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 254px;
-    height: 100%;
-    transform: translateX(310%);
-
-    &.is-open {
-      transform: translateX(210%);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
 }
 
 .mobile-menu__burger {
@@ -134,4 +152,10 @@
 
 .current {
   color: var(--accent-color);
+}
+
+.mobile-menu__btn.is-open {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
