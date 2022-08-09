@@ -1,6 +1,11 @@
 .about {
   padding-top: 60px;
   background-color: var(--secondary-bg-color);
+  background-image: url(../images/desktop/milk-left-desktop.png),
+    url(../images/desktop/milk-right-desktop.png);
+  background-position: left bottom 20%, right bottom 20%;
+  background-repeat: no-repeat;
+  background-size: auto 133px;
 }
 
 .about__label {
