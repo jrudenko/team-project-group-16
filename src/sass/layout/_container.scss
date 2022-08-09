@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond-to('small') {
+        @include container ($wd: 480px, $ml: auto, $mr: auto, $pl: 20px, $pr: 20px);
+    }
+
+    @include respond-to('medium') {
+        @include container ($wd: 768px, $ml: auto, $mr: auto, $pl: 32px, $pr: 32px);
+    }
+
+    @include respond-to('large') {
+        @include container ($wd: 1200px, $ml: auto, $mr: auto, $pl: 16px, $pr: 16px);
+    }
+}
