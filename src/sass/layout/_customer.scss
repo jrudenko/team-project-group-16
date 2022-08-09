@@ -1,5 +1,5 @@
-.customer-review {
-    
+.customer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,34 +15,15 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 120px;
-        margin-bottom: 16px;
-    }
 }
-
-.review {
-    display: flex;
-    justify-content: center;
-    
-    width: 100%;
-    height: 308px;
-    background-color: var(--additional-bg-color);
-
-       
-}
-
 
 .customer__text {
     position: relative;
-    width: calc(100% - 123px);
-    padding-top: 43px;
-    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 43px 58px 26px 65px;
+
+    background-color: var(--additional-bg-color);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -51,30 +32,32 @@
     text-align: center;
     
     color: var(--main-text-color);
-
-    &::before {
-            content: "";
-            position: absolute;
-            background-image: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
-            width: calc(100% + 12px);
-            height: calc(100% - 62px);
+    // background-image: repeating-linear-gradient( transparent, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
     
-            top: calc(50% + 31px);
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: calc(100% + 17px);
-            left: 50%;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            background: var(--additional-text-color);
-            box-shadow: -10px 0 0 var(--additional-text-color), 10px 0 0 var(--additional-text-color);
-        }
+    &:after {
+        content: "";
+        position: absolute;
+        margin-bottom: 16px;
+        top: calc(100% + 17px);
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--additional-text-color);
+        box-shadow: -10px 0 0 var(--additional-text-color), 10px 0 0 var(--additional-text-color);
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+        width: calc(100% - 100px);
+        height: 75%;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .customer__name {
