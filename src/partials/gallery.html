@@ -1,6 +1,6 @@
 <section class="gallery">
     <div class="container">
-        <h2 hidden>Gallery of ice cream</h2>
+        <h2 hidden  id="gallery">Gallery of ice cream</h2>
         <ul class="gellery_row">
             <li>
                 <picture class="thumb gallery_row">
@@ -22,8 +22,8 @@
                     <source media="(max-width: 320px)"
                         srcset="./images/gallery/1_green_ice_cream/home-pic5_sm.jpg 1x, ./images/gallery/1_green_ice_cream/home-pic5_sm@2x.jpg 2x"
                         type="image/jpg" />
-                    <img src="./images/gallery/1_green_ice_cream/home-pic5_sm.jpg"
-                        alt="two ice creams on a stick lie in a mint-colored plate" width="43" height="43">
+                    <img class="gellery_width" src="./images/gallery/1_green_ice_cream/home-pic5_sm.jpg"
+                        alt="two ice creams on a stick lie in a mint-colored plate">
                 </picture>
             </li>
             <li>
@@ -50,7 +50,7 @@
                 </picture>
             </li>
             <li>
-                <picture class="thumb">
+                <picture class="thumb gellery_relative">
                     <source media="(min-width: 1200px)"
                         srcset="./images/gallery/3_large_picture_with_ice_cream/home-pic1_lg.webp 1x, ./images/gallery/3_large_picture_with_ice_cream/home-pic1_lg@2x.webp 2x"
                         type="image/webp" />
