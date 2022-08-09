@@ -290,6 +290,62 @@ a {
   fill: var(--icons-bg-color);
 }
 
+.container {
+  width: 100% x;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+source {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 43px;
+}
+
+.gellery_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .products__container {
   margin-left: auto;
   margin-right: auto;
@@ -408,10 +464,11 @@ a {
   }
 }
 .products__subtitle--position {
-  margin-bottom: 32px;
+  margin-bottom: 70px;
 }
 
 .products__text {
+  margin-bottom: 32px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -428,7 +485,30 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .products__text {
+    margin-bottom: 60px;
     font-size: 16px;
+  }
+}
+
+.products__text::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 212px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: -20px 0 0 white, 20px 0 0 white;
+}
+@media screen and (min-width: 768px) {
+  .products__text::before {
+    top: 35%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__text::before {
+    top: 40%;
   }
 }
 
@@ -469,6 +549,7 @@ a {
 }
 
 .products__desc {
+  position: relative;
   padding: 160px 40px 40px 40px;
   width: 100%;
   border-radius: 24px;
@@ -491,4 +572,20 @@ a {
 }
 .products__desc--shake {
   background-color: var(--additional-bg-color-shake);
+}
+
+.products__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background: white;
+}
+
+.products__icon {
+  fill: var(--accent-color);
 }/*# sourceMappingURL=index.css.map */
