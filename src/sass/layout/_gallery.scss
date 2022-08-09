@@ -13,6 +13,18 @@
         @include container ($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
     }
 }
+.gallery {
+    outline: 1px solid red;
+    background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 34%, #ffffff 34%, #ffffff 100%, #ffffff 100%, #ffffff 100%); 
+     
+    @include respond-to('medium') {
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 18%, #ffffff 18%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
+    }
+    @include respond-to('large') {
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 79%, #ffffff 79%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
+    }
+
+}
 
 source {
     display: block;

@@ -1,12 +1,6 @@
 // Footer//
 //Break points
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1200px;
 
-$mobile-max: $tablet - 1;
-$tablet-max: $desktop - 1;
-/////////
 .footer {
   background-color: var(--secondary-bg-color);
   padding-top: 40px;
