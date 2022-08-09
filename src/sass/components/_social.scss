@@ -1,0 +1,30 @@
+// social//
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.socials__item {
+  @include set-items-margin(right, 30px);
+}
+
+.socials__link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background-color: var(--icons-bg-color);
+  @extend %flex-center;
+
+  transition: background-color var(--timing-transition);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+.footer__icon {
+  fill: var(--secondary-text-color);
+}
