@@ -7,6 +7,9 @@
 .advantages__list {
     @include respond-to('medium') {
         display: flex;
+        @include respond-to('large') {
+            justify-content: center;
+        }
     }
 }
 
@@ -31,7 +34,7 @@
 
 .advantages__subtitle {
     height: 56px;
-
+    
     margin-bottom: 4px;
 
     @include respond-to('medium') {
@@ -46,7 +49,7 @@
 }
 
 .advantages__subtitle--basic {
-    font-family: var(--secondary-font);
+    font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
