@@ -3,10 +3,24 @@
         <h1 class="hero__title"><span class="hero__title--white">ice cream <br>made with</span><br>
             <span class="hero__title--dark">passion</span>
         </h1>
+
+        <img src="./images/icons.svg#plus" alt="plus" class="hero__svg">
         
         <div class="circle"></div>
         <picture class="hero__thumb">
-            
+            <source media="(min-width: 1200px)" srcset="./images/hero/icecream-desk.png 1x,
+                                                        ./images/hero/icecream-desk@2x.png 2x,
+                                                        ./images/hero/icecream-desk@3x.png 3x
+                                                        " type="image/jpg">
+            <source media="(min-width: 768px)" srcset="./images/hero/icecream-tab.png 1x,
+                                                        ./images/hero/icecream-tab@2x.png 2x,
+                                                        ./images/hero/icecream-tab@3x.png 3x
+                                                        " type="image/jpg">
+            <source media="(max-width: 767px)" srcset="./images/hero/icecream-mob.png 1x,
+                                                        ./images/hero/icecream-mob@2x.png 2x,
+                                                        ./images/hero/icecream-mob@3x.png 3x
+                                                        " type="image/jpg">
+            <img src="./images/hero/icecream-desk.png" alt="icecream">
         </picture>
         <ul class="btns">
             <li class="btns__item">
@@ -21,20 +35,35 @@
             </li>
         </ul>
         <picture class="hero__girl">
-            
-           
+            <source media="(min-width: 1200px)" srcset="./images/hero/girl-desk.png 1x,
+                                                        ./images/hero/girl-desk@2x.png 2x,
+                                                        ./images/hero/girl-desk@3x.png 3x
+                                                        " type="image/jpg">
+            <source media="(min-width: 768px)" srcset="./images/hero/girl-tab.png 1x,
+                                                        ./images/hero/girl-tab@2x.png 2x,
+                                                        ./images/hero/girl-tab@3x.png 3x
+                                                        " type="image/jpg">
+            <img src="./images/hero/girl-desk.png" alt="girl with icecream">
         </picture>
 
         <picture class="hero__milk">
-            
+            <source media="(min-width: 1200px)" srcset="./images/hero/milk-desk.png 1x,
+                                                        ./images/hero/milk-desk@2x.png 2x,
+                                                        ./images/hero/milk-desk@3x.png 3x
+                                                        " type="image/jpg">
+            <source media="(min-width: 768px)" srcset="./images/hero/milk-tab.png 1x,
+                                                        ./images/hero/milk-tab@2x.png 2x,
+                                                        ./images/hero/milk-tab@3x.png 3x
+                                                        " type="image/jpg">
+            <img src="./images/hero/milk-desk.png" alt="milk in a jug">
         </picture>
 
         <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
-        <div class="hero__arrow">
-            
-        </div>
+        <button class="hero__arrow" type="button">
+            <img src="./images/arrow.png" alt="button">
+        </button>
 
         <ul class="hero__group">
             <li class="hero__group-item">
