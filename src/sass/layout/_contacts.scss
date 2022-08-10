@@ -1,9 +1,26 @@
 .contacts__section {
+
   padding-top: 60px;
   padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     padding-top: 120px;
+
+  padding-bottom: 40px;
+  background: linear-gradient(
+    180deg,
+    var(--main-bg-color) 172px,
+    var(--secondary-bg-color) 0
+  );
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    background: linear-gradient(
+      180deg,
+      var(---main-bg-color) 197px,
+      var(--secondary-bg-color) 0
+    );
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,7 +46,9 @@
   @media screen and (max-width: 480px) {
     flex-direction: column;
     align-items: center;
+
     gap: 20px;
+
     margin-bottom: 32px;
   }
 
