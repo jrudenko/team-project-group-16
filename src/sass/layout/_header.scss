@@ -45,6 +45,11 @@
 
   color: var(--secondary-text-color);
 
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.31;
@@ -63,6 +68,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     width: 160px;
+    margin-left: 32px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -77,15 +83,16 @@
   position: fixed;
   top: 0;
   left: 0;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   width: 250px;
   height: 100vh;
-
   background-color: var(--mob-menu-bg-color);
-
-  padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
+<<<<<<< Updated upstream
 
   transform: translateX(28%);
   transition: transform var(--timing-transition);
@@ -102,6 +109,14 @@
     &.is-open {
       transform: translateX(310%);
     }
+=======
+  transform: translateX(130%);
+  transition: var(--timing-transition);
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(310%);
+    transition: var(--timing-transition);
+>>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 1200px) {
@@ -109,16 +124,24 @@
   }
 }
 
-.mobile-menu__btn {
-  z-index: 1000;
-  background-color: transparent;
-  border: none;
-  margin-left: auto;
-  padding: 0;
+.mobile-menu.is-open {
+  transform: translateX(28%);
+  transition: var(--timing-transition);
 
   @media screen and (min-width: 768px) {
-    margin-left: 32px;
+    transform: translateX(207%);
+    transition: var(--timing-transition);
   }
+}
+
+.mobile-menu__btn {
+  fill: var(--secondary-text-color);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  margin-left: auto;
 
   @media screen and (min-width: 1200px) {
     display: none;
@@ -133,6 +156,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+<<<<<<< Updated upstream
 
   @media screen and (min-width: 768px) {
   
@@ -152,6 +176,8 @@
   .mobile-menu__btn.is-open & {
     opacity: 1;
   }
+=======
+>>>>>>> Stashed changes
 }
 
 .mobile-menu__nav-link {
@@ -162,25 +188,17 @@
   align-items: center;
 
   color: var(--secondary-text-color);
+
+  border-top: 1px solid #e18298;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: block;
 }
 
 .mobile-menu__nav-link:last-child {
   border-bottom: 1px solid #e18298;
 }
 
-.mobile-menu__nav-link {
-  display: block;
-  border-top: 1px solid #e18298;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-
 .current {
   color: var(--accent-color);
-}
-
-.mobile-menu__btn.is-open {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-  }
 }

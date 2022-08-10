@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 (() => {
 	const menuBtnRef = document.querySelector("[data-menu-button]");
@@ -14,3 +15,5 @@
 		body.classList.toggle("no-scroll");
 	});
 })();
+=======
+>>>>>>> Stashed changes
