@@ -1,19 +1,20 @@
-.contacts__section {
-  padding-top: 60px;
+.contacts__section {  
   padding-bottom: 40px;
+  background: linear-gradient(180deg, var(--main-bg-color) 172px, var(--secondary-bg-color) 0);
 
-  @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
     padding-top: 120px;
+    background: linear-gradient(180deg, var(---main-bg-color) 197px, var(--secondary-bg-color) 0);
   }
-
+  
   @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
   }
 }
 
-.contacts__container {
+.contacts__container {  
   @include respond-to('small') {
-    @include container($wd: 480px, $ml: auto, $mr: auto, $pl: 15px, $pr: 15px);
+    @include container($wd: 480px, $ml: auto, $mr: auto, $pl: 20px, $pr: 20px);
   }
   @include respond-to('medium') {
     @include container($wd: 768px, $ml: auto, $mr: auto, $pl: 20px, $pr: 20px);
@@ -25,11 +26,11 @@
 .contacts__list {
   display: flex;
   justify-content: center;
+  gap: 20px;
 
   @media screen and (max-width: 480px) {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    align-items: center;    
     margin-bottom: 32px;
   }
 
