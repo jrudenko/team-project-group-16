@@ -14,14 +14,18 @@
     }
 }
 .gallery {
-    outline: 1px solid red;
-    background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 34%, #ffffff 34%, #ffffff 100%, #ffffff 100%, #ffffff 100%); 
+    outline: 1px solid red;    
+    background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%, #ffffff 100%, #ffffff 100%); 
      
     @include respond-to('medium') {
-        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 18%, #ffffff 18%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 57%, #ffffff 57%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
     @include respond-to('large') {
-        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 79%, #ffffff 79%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
+        padding-top: 120px;
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 66%, #ffffff 66%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
 
 }
@@ -31,17 +35,53 @@ source {
     max-width: 100%;
     height: auto;
 }
-.thumb {
-    overflow: hidden;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    width: 43px;    
-}
- .gellery_row {
+
+ .gellery__row {
     display: flex;
+    gap: 2px;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
+    @include respond-to('medium') {
+            gap: 6px;
+        }
+    
+        @include respond-to('large') {
+            gap: 8px;
+        }
+    
+}
+.gellery__width {
+    overflow: hidden;
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 43px;
+    
+        @include respond-to('medium') {
+            width: 105px;
+            border-radius: 20px;
+        }
+    
+        @include respond-to('large') {
+            width: 138px;
+        }
+}
+.gellery__thumb {
+    overflow: hidden;
+        border: 1px solid red;
+        border-radius: 8px;
+        width: 89px;
+    
+        @include respond-to('medium') {
+            width: 214px;
+            border-radius: 20px;
+        }
+    
+        @include respond-to('large') {
+            width: 283px;
+        }
+}
+.gellery__relative {
+    position: relative;
 }
