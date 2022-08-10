@@ -1,3 +1,18 @@
+.container {
+     @include container ($wd: 100%x, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+
+     @include respond-to('small') {
+         @include container ($wd: 320px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+     }
+
+    @include respond-to('medium') {
+        @include container ($wd: 768px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+     }
+
+     @include respond-to('large') {
+         @include container ($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
+     }
+    }
 
 .gallery {
     outline: 1px solid red;       
