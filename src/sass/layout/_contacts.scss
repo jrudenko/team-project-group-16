@@ -1,25 +1,4 @@
 .contacts__section {
-<<<<<<< Updated upstream
-
-
-  padding-top: 60px;
-  padding-bottom: 40px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 120px;
-
-  padding-bottom: 40px;
-  background: linear-gradient(
-    180deg,
-    var(--main-bg-color) 172px,
-    var(--secondary-bg-color) 0
-  );
-
-  @media screen and (min-width: 768px) {
-    padding-top: 120px;
-
-=======
->>>>>>> Stashed changes
   padding-top: 60px;
   padding-bottom: 40px;
   background: linear-gradient(
@@ -30,21 +9,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 120px;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     background: linear-gradient(
       180deg,
       var(---main-bg-color) 197px,
       var(--secondary-bg-color) 0
     );
-<<<<<<< Updated upstream
-
-
-
-=======
->>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 1200px) {
@@ -54,7 +23,7 @@
 
 .contacts__container {
   @include respond-to('small') {
-    @include container($wd: 480px, $ml: auto, $mr: auto, $pl: 15px, $pr: 15px);
+    @include container($wd: 480px, $ml: auto, $mr: auto, $pl: 20px, $pr: 20px);
   }
   @include respond-to('medium') {
     @include container($wd: 768px, $ml: auto, $mr: auto, $pl: 20px, $pr: 20px);
@@ -66,26 +35,12 @@
 .contacts__list {
   display: flex;
   justify-content: center;
-
   gap: 20px;
   margin-bottom: 32px;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
-<<<<<<< Updated upstream
-
-
-    gap: 20px;
-
-    margin-bottom: 32px;
-
-=======
->>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 768px) {
