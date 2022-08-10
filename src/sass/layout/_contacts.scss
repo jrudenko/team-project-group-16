@@ -1,4 +1,5 @@
 .contacts__section {
+<<<<<<< Updated upstream
 
 
   padding-top: 60px;
@@ -17,6 +18,8 @@
   @media screen and (min-width: 768px) {
     padding-top: 120px;
 
+=======
+>>>>>>> Stashed changes
   padding-top: 60px;
   padding-bottom: 40px;
   background: linear-gradient(
@@ -27,15 +30,21 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 120px;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     background: linear-gradient(
       180deg,
       var(---main-bg-color) 197px,
       var(--secondary-bg-color) 0
     );
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 1200px) {
@@ -60,17 +69,23 @@
 
   gap: 20px;
   margin-bottom: 32px;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+<<<<<<< Updated upstream
 
 
     gap: 20px;
 
     margin-bottom: 32px;
 
+=======
+>>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 768px) {

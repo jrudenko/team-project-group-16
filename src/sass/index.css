@@ -332,6 +332,9 @@ a {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 1200px) {
   .nav__link {
     font-size: 16px;
@@ -354,7 +357,10 @@ a {
     display: block;
     width: 160px;
     margin-left: 32px;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   }
 }
 @media (min-width: 1200px) {
@@ -399,7 +405,10 @@ a {
   .mobile-menu {
     transform: translateX(310%);
     transition: var(--timing-transition);
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   }
 }
 @media screen and (min-width: 1200px) {
@@ -434,6 +443,17 @@ a {
   }
 }
 
+.mobile-menu.is-open {
+  transform: translateX(28%);
+  transition: var(--timing-transition);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu.is-open {
+    transform: translateX(207%);
+    transition: var(--timing-transition);
+  }
+}
+
 .mobile-menu__btn {
   fill: var(--secondary-text-color);
   background-color: transparent;
@@ -442,7 +462,10 @@ a {
   margin-top: 20px;
   margin-bottom: 26px;
   margin-left: auto;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 @media screen and (min-width: 1200px) {
   .contacts__text, .shedule__text {
@@ -451,6 +474,7 @@ a {
   }
 }
 
+<<<<<<< Updated upstream
 
 .shedule__item {
   margin-bottom: 8px;
@@ -491,6 +515,17 @@ a {
   justify-content: center;
   gap: 15px;
 }
+=======
+.mobile-menu__button {
+  width: 209px;
+  height: 44px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+>>>>>>> Stashed changes
 
 .mobile-menu__nav-link {
   font-weight: 700;
@@ -503,6 +538,7 @@ a {
   padding-top: 11px;
   padding-bottom: 11px;
   display: block;
+<<<<<<< Updated upstream
 
 }
 @media screen and (min-width: 1200px) {
@@ -537,6 +573,18 @@ a {
   color: var(--accent-color);
 }
 
+=======
+}
+
+.mobile-menu__nav-link:last-child {
+  border-bottom: 1px solid #e18298;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+>>>>>>> Stashed changes
 .container {
   width: 100%;
   padding-left: 20px;
@@ -885,17 +933,24 @@ element-2 {
   display: flex;
   justify-content: center;
   gap: 20px;
+<<<<<<< Updated upstream
 
   margin-bottom: 32px;
 
+=======
+  margin-bottom: 32px;
+>>>>>>> Stashed changes
 }
 @media screen and (max-width: 767px) {
   .contacts__list {
     flex-direction: column;
     align-items: center;
+<<<<<<< Updated upstream
 
     margin-bottom: 32px;
 
+=======
+>>>>>>> Stashed changes
   }
 }
 @media screen and (min-width: 768px) {
