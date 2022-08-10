@@ -292,6 +292,14 @@
             height: 16px;
             border-radius: 50%;
             background-color: var(--secondary-text-color);
+
+            @media screen and (min-width: 1200px) {
+                    top: -7px;
+                    right: -10px;
+
+                    width: 30px;
+                    height: 30px;
+                }
         }
 
         &-text {

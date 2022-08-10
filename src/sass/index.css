@@ -630,6 +630,16 @@ a {
     border-radius: 50%;
     background-color: var(--secondary-text-color);
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group-item::after {
+    top: -7px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__group-text {
     font-family: Titan One;
     font-size: 28px;
