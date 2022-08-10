@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__container">
     <a class="header__logo" href="./index.html" aria-label="Logo IceCreame">
-      <svg class="header__icon" width="199" height="50">
+      <svg width="199" height="50">
         <use href="./images/icons.svg#icon-logo"></use>
       </svg>
     </a>
@@ -26,14 +26,18 @@
       </ul>
     </nav>
 
-    <button class="mobile-menu__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu__nav-list"
-      type="button">
-      <svg class="mobile-menu__icon" width="20" height="12">
-        <use class="mobile-menu__burger" href="./images/icons.svg#icon-burger"></use>
+
+    <button class="btn-mobile-menu js-menu-container" aria-expanded="false" aria-controls="mobile-menu__nav-list"
+      type="button" aria-label="Mobile menu switch">
+      <svg class="btn-mobile-menu__icon" width="20" height="12">
+        <use class="btn-mobile-menu__burger js-open-menu" href="./images/icons.svg#icon-burger"></use>
+        <use class="btn-mobile-menu__close js-close-menu id=" mobile-menu__nav-list""
+          href="./images/icons.svg#icon-close">
+        </use>
       </svg>
     </button>
 
-    <button class="button button--header" type="button">
+    <button class="button button--header"  aria-label="Left Align" type="button">
       <span>Buy now</span>
       <svg class="button__icon" width="10" height="10">
         <use href="./images/icons.svg#icon-vector"></use>
@@ -43,14 +47,9 @@
 </header>
 
 <!-- Мобільне меню  -->
-<div class="mobile-menu js-menu-container" id="mobile-menu__nav-list">
-  <button class="mobile-menu__btn js-close-menu" type="button">
-    <svg class="mobile-menu__icon" width="20" height="12">
-      <use class="mobile-menu__close" href="./images/icons.svg#icon-close"></use>
-    </svg>
-  </button>
 
-  <button class="mobile-menu__button button" type="button">
+<div class="mobile-menu">
+  <button class="mobile-menu__button button" aria-label="Left Align"type="button">
     <span>Buy now</span>
     <svg class="button__icon" width="10" height="10">
       <use href="./images/icons.svg#icon-vector"></use>
@@ -77,3 +76,4 @@
     </ul>
   </nav>
 </div>
+
