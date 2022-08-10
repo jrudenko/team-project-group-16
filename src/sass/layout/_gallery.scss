@@ -15,12 +15,17 @@
 }
 .gallery {
     outline: 1px solid red;
+    padding-top: 60px;
     background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%, #ffffff 100%, #ffffff 100%); 
      
     @include respond-to('medium') {
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
         background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 57%, #ffffff 57%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
     @include respond-to('large') {
+        padding-top: 120px;
         background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 66%, #ffffff 66%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
 
