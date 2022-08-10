@@ -1,30 +1,14 @@
-.container {
-    @include container ($wd: 100%x, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
 
-    @include respond-to('small') {
-        @include container ($wd: 320px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-    }
-
-    @include respond-to('medium') {
-        @include container ($wd: 768px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-    }
-
-    @include respond-to('large') {
-        @include container ($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
-    }
-}
 .gallery {
-    outline: 1px solid red;    
+    outline: 1px solid red;       
     background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%, #ffffff 100%, #ffffff 100%); 
      
-    @include respond-to('medium') {
-        padding-top: 64px;
-        display: flex;
-        justify-content: center;
+    @include respond-to('medium') {      
         background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 57%, #ffffff 57%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
-    @include respond-to('large') {
-        padding-top: 120px;
+    @include respond-to('large') {        
+        margin-right: 93px;
+        margin-left: 93px;
         background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 66%, #ffffff 66%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
     }
 
@@ -38,10 +22,11 @@ source {
 
  .gellery__row {
     display: flex;
+    flex-flow: column wrap;
     gap: 2px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: row;
     flex-wrap: wrap;
     @include respond-to('medium') {
             gap: 6px;
@@ -84,4 +69,10 @@ source {
 }
 .gellery__relative {
     position: relative;
+}
+.element-1 {
+    align-self: center;
+}
+element-2 {
+    align-self: sta
 }
