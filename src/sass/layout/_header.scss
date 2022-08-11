@@ -1,14 +1,18 @@
 .header {
   background-color: var(--complementary-bg-color);
-    padding: 8px 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+    
     width: 100vw;
+    display: flex;
   
     @media screen and (min-width: 768px) {
       padding: 32px;
     }
   
     @media screen and (min-width: 1200px) {
-      padding: 37px 56px;
+      padding: 56px;
     }
   }
   // background-color: var(--complementary-bg-color);
@@ -34,7 +38,19 @@
 
 .header__container {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {      
+      justify-content: space-between;
+      width: $tablet;
+      
+    }
+  
+    @media screen and (min-width: $desktop) {      
+      width: $desktop;      
+    }
 }
 
 .header__logo {
@@ -82,8 +98,8 @@
 
   @media screen and (min-width: 768px) {
     display: block;
-    width: 160px;
-    margin-left: 32px;
+    margin-left: auto;
+    width: 160px;    
   }
 
   @media screen and (min-width: 1200px) {
@@ -108,7 +124,7 @@
   // transform: translateX(130%);
   transition: var(--timing-transition);
 
-  @media screen and (mi-width: 768px) {
+  @media screen and (min-width: 768px) {
     transform: translateX(310%);
     transition: var(--timing-transition);
   }
