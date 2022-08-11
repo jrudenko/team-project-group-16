@@ -33,7 +33,7 @@ source {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-
+}
 
 .gallery {
   background: linear-gradient(
@@ -154,12 +154,14 @@ source {
     border-radius: 23px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .gallery__img {
     cursor: zoom-in;
     border-radius: 6px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .gallery__container {
     padding-left: calc(15px + (135 - 15) * ((100vw - 320px) / (768 - 320)));
@@ -209,6 +211,7 @@ source {
     border-radius: calc(5px + (25 - 5) * ((100vw - 320px) / (768 - 320)));
   }
 }
+
 @media screen and (max-width: 1050px) {
   .gallery {
     padding: 0 0 37% 0;
