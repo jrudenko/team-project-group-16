@@ -1,3 +1,4 @@
+
 .container {
   @include container($wd: 100%x, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
 
@@ -13,6 +14,7 @@
     @include container($wd: 430px, $ml: auto, $mr: auto, $pl: 0px, $pr: 0px);
   }
 }
+
 
 .gallery {
   background: linear-gradient(
