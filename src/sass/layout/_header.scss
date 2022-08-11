@@ -94,7 +94,7 @@
   height: 502; 
   background-color: var(--mob-menu-bg-color);
   padding: 20px;  
-  // opacity: 0; 
+  opacity: 0; 
   transition: var(--timing-transition);
 
     @include respond-to('small') { 
@@ -150,7 +150,9 @@
 
 .btn-mobile-menu {
   display: block;
-  background-color: transparent;
+  // background-color: var(--complementary-bg-color);
+  background-color: black;
+  fill: var(--accent-color);
   border: none;  
   align-items: center; 
   margin-left: auto;
@@ -160,6 +162,24 @@
   @include respond-to('large') {
     display: none;
   }  
+}
+.mobile-menu__burger {
+  z-index: 1000;
+  fill: var(--accent-color);
+  // background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 27px;
+  margin-left: auto;
+  width: 20px;
+
+  .mobile-menu.is-open & {
+    opacity: 0;
+  }
+
+  @include respond-to('large') {
+    display: none;
+  }
 }
 
 
