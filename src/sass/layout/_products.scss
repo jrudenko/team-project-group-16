@@ -286,7 +286,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .products__subtitle::before {
+    .products__subtitle--ice-crem::before {
         background-image: url(../images/mobile/ice_cream@2x.png);
     }
 }
@@ -325,7 +325,7 @@
 (min-resolution: 2dppx) {
 
 
-    .products__subtitle::before {
+    .products__subtitle--coffee::before {
         background-image: url(../images/mobile/ice_coffee@2x.png);
     }
 }
@@ -362,7 +362,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .products__subtitle::before {
+    .products__subtitle--shake::before {
         background-image: url(../images/mobile/milkshake@2x.png);
     }
 }
