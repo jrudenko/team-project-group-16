@@ -8,19 +8,8 @@
     var(--secondary-bg-color) 0
   );
 
-  background: linear-gradient(
-    180deg,
-    var(--main-bg-color) 172px,
-    var(--secondary-bg-color) 0
-  );
-
   @media screen and (min-width: 768px) {
     padding-top: 120px;
-    background: linear-gradient(
-      180deg,
-      var(---main-bg-color) 197px,
-      var(--secondary-bg-color) 0
-    );
   }
 
   @media screen and (min-width: 1200px) {
