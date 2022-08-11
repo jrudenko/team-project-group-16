@@ -1,15 +1,36 @@
 .header {
   background-color: var(--complementary-bg-color);
-  padding: 8px 20px;
-
-  @media screen and (min-width: 768px) {
-    padding: 32px;
+    padding: 8px 20px;
+    width: 100vw;
+  
+    @media screen and (min-width: 768px) {
+      padding: 32px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding: 37px 56px;
+    }
   }
+  // background-color: var(--complementary-bg-color);
+  // align-items: center;
+  // padding: 8px 20px;
+  // display: flex;
+  // width: 100vw;
+  // // margin: 0 auto;
+  // // position: fixed;
+  // // top: 0;
+  // // left: 50%;
+  // // transform: translatex(-50%);
+  // // z-index: 5;
 
-  @media screen and (min-width: 1200px) {
-    padding: 37px 56px;
-  }
-}
+  // @media screen and (min-width: 768px) {
+  //   padding: 32px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding: 37px 56px;
+  // }
+
 
 .header__container {
   display: flex;
@@ -73,7 +94,7 @@
 // Мобільне меню
 
 .mobile-menu {
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -110,31 +131,32 @@
 
 .btn-mobile-menu {
   background-color: transparent;
-  border: none;
-  width: 20px;
-  height: 12px;
+  border: none;  
 
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
 
-  z-index: 100000;
+  z-index: index 7;;
 
   @include respond-to('medium') {
     display: none;
   }
 }
 
-.mobile-menu__burger {
-  z-index: 1000;
+.btn-mobile-menu__burger { 
+  outline: 1 solid green;
+  opacity: 1;
   fill: var(--accent-color);
   background-color: transparent;
   border: none;
   padding: 0;
   margin-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
-  width: 20px;
 
   .mobile-menu.is-open & {
     opacity: 0;
@@ -155,7 +177,7 @@
   margin-bottom: 26px;
   margin-left: auto;
 
-  .btn-mobile-menu.is-open & {
+  .btn-mobile-menu__burger.is-open & {
     opacity: 1;
   }
 
