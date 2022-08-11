@@ -603,17 +603,17 @@ source {
 .contacts__section {
   padding-top: 60px;
   padding-bottom: 40px;
-  background: linear-gradient(180deg, var(--main-bg-color) 172px, var(--secondary-bg-color) 0);
+  background: linear-gradient(180deg, var(--main-bg-color) 367px, var(--secondary-bg-color) 0);
 }
 @media screen and (min-width: 768px) {
   .contacts__section {
     padding-top: 120px;
-    background: linear-gradient(180deg, var(---main-bg-color) 197px, var(--secondary-bg-color) 0);
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__section {
     padding-bottom: 120px;
+    background: linear-gradient(180deg, var(--main-bg-color) 217px, var(--secondary-bg-color) 0);
   }
 }
 
