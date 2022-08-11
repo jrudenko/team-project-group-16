@@ -16,6 +16,25 @@
 }
 
 
+source {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.thumb {
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 43px;
+}
+.gellery_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
 .gallery {
   background: linear-gradient(
     to bottom,
@@ -241,4 +260,5 @@
   .gallery__img {
     border-radius: calc(5px + (15 - 5) * ((100vw - 320px) / (768 - 320)));
   }
+
 }
