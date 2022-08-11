@@ -3,43 +3,29 @@
   padding-bottom: 60px;
 
   background-color: #fff5f6;
-  background-image: url(../images/desktop/milk-left-desktop.png),
-    // фото молоко зліва
-    url(../images/desktop/milk-right-desktop.png);
-  // фото молоко справа
-
-  background-position: left bottom 20%,
-    right bottom 20%;
-  background-repeat: no-repeat;
-  background-size: auto 133px;
-
-  retina {
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/milk-left-desktop@2x.png),
-        // фото молоко зліва ретіна
-        url(../images/desktop/milk-right-desktop@2x.png);
-      // фото молоко справа ретіна
-    }
-  }
-
-  @media screen and (min-width: 480px) {
-    background-position: left bottom 12%,
-      right bottom 20%;
-
-    background-size: auto 150px;
-
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: none
-  }
-
+ 
   @media screen and (min-width: 1200px) {
-    background-position: left bottom 15%, right bottom;
-    background-size: auto 460px;
+    background-image: url(../images/desktop/milk-left-desktop.png),
+      // фото молоко зліва
+      url(../images/desktop/milk-right-desktop.png);
+    // фото молоко справа
+
+    background-position: top 30% left,
+      right bottom 35%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 161px, 268px;
+
+    retina {
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/milk-left-desktop@2x.png),
+          // фото молоко зліва ретіна
+          url(../images/desktop/milk-right-desktop@2x.png);
+        // фото молоко справа ретіна
+      }
+    }
   }
 }
 
