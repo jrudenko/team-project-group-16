@@ -54,7 +54,7 @@
   }
   
   .mobile-menu.is-open {
-    z-index: 1;
+    z-index: 10;
     
     transform: translateX(0);
     transition: var(--timing-transition);
@@ -73,7 +73,7 @@
     align-items: center; 
     margin-left: auto;  
   
-    z-index: 10;
+    z-index: 100;
   
     @include respond-to('large') {
       display: none;
@@ -88,9 +88,9 @@
     margin-left: auto;
     width: 20px;
   
-    .mobile-menu.is-open & {
-        z-index: 1;
-        }
+    // .mobile-menu.is-open & {
+    //     z-index: 10;
+    //     }
   
     .btn-mobile-menu.is-open & {
         opacity: 0;
