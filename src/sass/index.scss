@@ -1,5 +1,6 @@
 @import "./utils/breakpoints";
 @import "./utils/mixins";
+@import "./utils/placeholder";
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./base/common";
@@ -13,11 +14,10 @@
 @import "./components/social";
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/container";
+@import "./components/container";
 @import "./layout/about";
 @import "./layout/advantages";
 @import "./layout/gallery";
-@import "./layout/clients";
 @import "./layout/contacts";
 @import "./layout/customer";
 @import "./layout/products";

@@ -1,7 +1,7 @@
 %subtitle {
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
 
   letter-spacing: 0.04em;
   color: var(--main-text-color);
@@ -10,9 +10,16 @@
 %text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 29px;
+  line-height: 1.81;
 
   letter-spacing: 0.04em;
 
   color: var(--complementary-text-color);
+}
+
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

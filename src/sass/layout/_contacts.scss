@@ -8,15 +8,16 @@
     var(--secondary-bg-color) 0
   );
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     padding-top: 120px;
   }
 
-<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
-=======
+
   @include respond-to('large') {
->>>>>>> Stashed changes
+
+    @include respond-to('large') {
+
     padding-bottom: 120px;
     background: linear-gradient(
       180deg,
@@ -51,20 +52,22 @@
     align-items: center;
   }
 
-<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
+
+ @include respond-to('large') {
+
     gap: 32px;
     margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
   }
-=======
+
   @include respond-to('large') {
     gap: 32px;
     margin-bottom: 60px;
   }
->>>>>>> Stashed changes
+
 }
 
 .contacts__item {
@@ -78,13 +81,15 @@
     height: 412px;
   }
 
-<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
     padding: 40px 40px;
-=======
+
   @include respond-to('large') {
     padding: 40px;
->>>>>>> Stashed changes
+
+    @include respond-to('large') {
+    padding: 40px;
+
     width: 368px;
     height: 538px;
   }
@@ -93,28 +98,28 @@
 .contacts__title {
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
   display: block;
   text-align: center;
   width: 80px;
-  background: #f0d1a5;
+  background: var(--additional-bg-color-coffee);
   border-radius: 4px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
   }
 
   &--accent {
     @extend .contacts__title;
 
     width: 130px;
-    background: #c2e297;
+    background: var(--additional-bg-color-shake);
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
       font-size: 16px;
       line-height: 30px;
     }
@@ -127,7 +132,7 @@
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     padding-bottom: 32px;
     margin-bottom: 32px;
   }
@@ -136,24 +141,25 @@
 .contacts__subtitle {
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 1.83;
 
   letter-spacing: 0.04em;
 
   color: var(--main-text-color);
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     font-size: 14px;
     line-height: 26px;
   }
 
-<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
-=======
+
   @include respond-to('large') {
->>>>>>> Stashed changes
+
+    @include respond-to('large') {
+
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88x;
   }
 }
 
@@ -164,25 +170,26 @@
 
   color: var(--complementary-text-color);
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 1.64;
   }
 
-<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
-=======
+
   @include respond-to('large') {
->>>>>>> Stashed changes
+
+    @include respond-to('large') {
+
     font-size: 16px;
-    line-height: 29px;
+    line-height: 1.81;
   }
 }
 
 .shedule__item {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     margin-bottom: 12px;
   }
 }
@@ -193,15 +200,15 @@
 
 .shedule__text {
   @extend .contacts__text;
-  line-height: 22px;
+  line-height: 1.38;
   color: var(--secondary-title-color);
 }
 
 .contacts-box__link {
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
-  color: #907e82;
+  line-height: 1.5;
+  color: var(--complementary-text-color);
   transition: var(----timing-transition);
 
   &:hover,
@@ -209,52 +216,65 @@
     color: var(--secondary-btn-hover-bg-color);
   }
 
-<<<<<<< Updated upstream
+
   @media screen and (min-width: 768px) {
-=======
+
   @include respond-to('medium') {
->>>>>>> Stashed changes
+
+    @include respond-to('medium') {
+
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.86;
   }
 
-<<<<<<< Updated upstream
+
   @media screen and (min-width: 1200px) {
-=======
+
   @include respond-to('large') {
->>>>>>> Stashed changes
+
+    @include respond-to('large') {
+
     font-size: 16px;
-    line-height: 29px;
+    line-height: 1.81;
   }
 }
 
 .contacts-btn {
-<<<<<<< Updated upstream
+
   display: flex;
   justify-content: center;
   align-items: center;
-=======
+
   @extend %flex-center;
->>>>>>> Stashed changes
+
+  @extend %flex-center;
+  background-color: var(--accent);
+
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 10px;
   }
 
-<<<<<<< Updated upstream
+
   @media screen and (min-width: 768px) {
     gap: 12px;
   }
 
   @media screen and (min-width: 1200px) {
-=======
+
   @include respond-to('medium') {
     gap: 12px;
   }
 
   @include respond-to('large') {
->>>>>>> Stashed changes
+
+    @include respond-to('medium') {
+    gap: 12px;
+  }
+
+    @include respond-to('large') {
+
     gap: 14px;
   }
 
@@ -262,7 +282,7 @@
     fill: currentColor;
     margin-left: 10px;
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
       margin-left: 13px;
     }
   }
