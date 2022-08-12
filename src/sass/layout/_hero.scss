@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+<<<<<<< Updated upstream
     top: 0;
     left: 0;
 
@@ -9,6 +10,14 @@
     margin-left: auto;
     margin-right: auto;
 
+=======
+    top: 0; 
+    width: 320px;
+    height: 502px;
+
+    margin: 0 auto;
+    
+>>>>>>> Stashed changes
     overflow: hidden;
 
     background-color: var(--complementary-bg-color);
@@ -17,13 +26,18 @@
     @media screen and (min-width: 768px) {
         width: 768px;
         height: 416px;
+        width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
         height: 664px;
+<<<<<<< Updated upstream
 
 
+=======
+        width: 1200px;
+>>>>>>> Stashed changes
     }
 }
 
