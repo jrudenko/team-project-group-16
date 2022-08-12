@@ -11,7 +11,7 @@
 
     overflow: hidden;
 
-    background-color: var(--complementary-bg-color);
+    
 
 
     @media screen and (min-width: 768px) {
@@ -22,18 +22,38 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 100vw;
+        width: 1200px;
         height: 664px;
 
     }
 }
 
+.hero__container {
+    background-color: var(--complementary-bg-color);
+    width: 320px;
+    height: 500px;
+
+    @media screen and (min-width: 768px) {
+            width: 768px;
+            height: 416px;
+    
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 100vw;
+            height: 664px;
+    
+        }
+
+}
 .hero__title {
     z-index: 1;
 
     position: absolute;
     top: 194px;
     left: 20px;
+    z-index: 5;
 
     font-family: Titan One;
     text-transform: uppercase;
@@ -141,15 +161,18 @@
         display: block;
 
         position: absolute;
-        top: 256px;
+        bottom: 1px;
         left: 546px;
+
         width: 190px;
+        height: 150px;
     }
 
         @media screen and (min-width: 1200px) {
             top: 423px;
-                left: 880px;
-                width: 304px;
+            left: 880px;
+
+            width: 304px;
         }
 }
 
@@ -209,6 +232,10 @@
     @media screen and (min-width: 1200px) {
         top: 460px;
         left: 232px;
+
+        font-size: 14px;
+
+        width: 200px;
     }
 
 }
@@ -231,6 +258,10 @@
     @media screen and (min-width: 1200px) {
         top: 555px;
         left: 232px;
+    }
+
+    &:hover {
+        transform: scale(1.4);
     }
 }
 
