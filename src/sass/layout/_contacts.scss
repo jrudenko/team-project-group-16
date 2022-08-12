@@ -12,7 +12,11 @@
     padding-top: 120px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
+=======
+  @include respond-to('large') {
+>>>>>>> Stashed changes
     padding-bottom: 120px;
     background: linear-gradient(
       180deg,
@@ -47,6 +51,7 @@
     align-items: center;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
     gap: 32px;
     margin-bottom: 60px;
@@ -54,6 +59,12 @@
 
   @media screen and (min-width: 1200px) {
   }
+=======
+  @include respond-to('large') {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+>>>>>>> Stashed changes
 }
 
 .contacts__item {
@@ -67,8 +78,13 @@
     height: 412px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
     padding: 40px 40px;
+=======
+  @include respond-to('large') {
+    padding: 40px;
+>>>>>>> Stashed changes
     width: 368px;
     height: 538px;
   }
@@ -131,7 +147,11 @@
     line-height: 26px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
+=======
+  @include respond-to('large') {
+>>>>>>> Stashed changes
     font-size: 16px;
     line-height: 30px;
   }
@@ -149,7 +169,11 @@
     line-height: 23px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
+=======
+  @include respond-to('large') {
+>>>>>>> Stashed changes
     font-size: 16px;
     line-height: 29px;
   }
@@ -185,32 +209,52 @@
     color: var(--secondary-btn-hover-bg-color);
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
+=======
+  @include respond-to('medium') {
+>>>>>>> Stashed changes
     font-size: 14px;
     line-height: 26px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
+=======
+  @include respond-to('large') {
+>>>>>>> Stashed changes
     font-size: 16px;
     line-height: 29px;
   }
 }
 
 .contacts-btn {
+<<<<<<< Updated upstream
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+  @extend %flex-center;
+>>>>>>> Stashed changes
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 10px;
   }
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
     gap: 12px;
   }
 
   @media screen and (min-width: 1200px) {
+=======
+  @include respond-to('medium') {
+    gap: 12px;
+  }
+
+  @include respond-to('large') {
+>>>>>>> Stashed changes
     gap: 14px;
   }
 
