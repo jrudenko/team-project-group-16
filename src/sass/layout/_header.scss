@@ -2,7 +2,7 @@
   background-color: var(--complementary-bg-color);     
   width: 100vw;
   display: flex; 
-  position: absolute;
+ 
   
   }
 
@@ -17,6 +17,14 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  
+    width: 320px;
+    
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 5;
 
     
    @include respond-to('medium') {     
