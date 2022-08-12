@@ -2,28 +2,19 @@
   padding-top: 60px;
   padding-bottom: 40px;
 
-  background: linear-gradient(
-    180deg,
-    var(--main-bg-color) 367px,
-    var(--secondary-bg-color) 0
-  );
+  background: linear-gradient(180deg,
+      var(--main-bg-color) 367px,
+      var(--secondary-bg-color) 0);
 
   @include respond-to('medium') {
     padding-top: 120px;
   }
 
-  @media screen and (min-width: 1200px) {
-
   @include respond-to('large') {
-
-    @include respond-to('large') {
-
     padding-bottom: 120px;
-    background: linear-gradient(
-      180deg,
-      var(--main-bg-color) 217px,
-      var(--secondary-bg-color) 0
-    );
+    background: linear-gradient(180deg,
+        var(--main-bg-color) 217px,
+        var(--secondary-bg-color) 0);
   }
 }
 
@@ -52,17 +43,6 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 768px) {
-
- @include respond-to('large') {
-
-    gap: 32px;
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-
   @include respond-to('large') {
     gap: 32px;
     margin-bottom: 60px;
@@ -81,15 +61,8 @@
     height: 412px;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 40px 40px;
-
   @include respond-to('large') {
     padding: 40px;
-
-    @include respond-to('large') {
-    padding: 40px;
-
     width: 368px;
     height: 538px;
   }
@@ -152,12 +125,7 @@
     line-height: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
-
   @include respond-to('large') {
-
-    @include respond-to('large') {
-
     font-size: 16px;
     line-height: 1.88x;
   }
@@ -175,12 +143,7 @@
     line-height: 1.64;
   }
 
-  @media screen and (min-width: 1200px) {
-
   @include respond-to('large') {
-
-    @include respond-to('large') {
-
     font-size: 16px;
     line-height: 1.81;
   }
@@ -216,65 +179,31 @@
     color: var(--secondary-btn-hover-bg-color);
   }
 
-
-  @media screen and (min-width: 768px) {
-
   @include respond-to('medium') {
-
-    @include respond-to('medium') {
-
     font-size: 14px;
     line-height: 1.86;
   }
 
-
-  @media screen and (min-width: 1200px) {
-
   @include respond-to('large') {
-
-    @include respond-to('large') {
-
     font-size: 16px;
     line-height: 1.81;
   }
 }
 
 .contacts-btn {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @extend %flex-center;
-
   @extend %flex-center;
   background-color: var(--accent);
-
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 10px;
   }
 
-
-  @media screen and (min-width: 768px) {
-    gap: 12px;
-  }
-
-  @media screen and (min-width: 1200px) {
-
   @include respond-to('medium') {
     gap: 12px;
   }
 
   @include respond-to('large') {
-
-    @include respond-to('medium') {
-    gap: 12px;
-  }
-
-    @include respond-to('large') {
-
     gap: 14px;
   }
 
