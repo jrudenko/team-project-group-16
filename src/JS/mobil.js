@@ -1,7 +1,7 @@
 
 (() => {
-	const menuBtnRef = document.querySelector("[data-menu-button]");
-	const mobileMenuRef = document.querySelector("[data-menu]");
+	const menuBtnRef = document.querySelector("[data-menu-button-mob]");
+	const mobileMenuRef = document.querySelector("[data-menu-mob]");
 	const body = document.querySelector("[data-body]");
 
 	menuBtnRef.addEventListener("click", () => {

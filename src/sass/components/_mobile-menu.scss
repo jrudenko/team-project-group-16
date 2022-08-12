@@ -81,9 +81,11 @@
   }
 }
 
-.btn-mobile-menu.is-open {
-   transform: translate(200px, -30px);
-}
+// .btn-mobile-menu.is-open {
+//   @include respond-to('medium') {
+//     transform: translate(200px, -30px);
+//   }
+//   }
 
 .btn-mobile-menu__burger {
   fill: var(--accent-color);
@@ -121,7 +123,7 @@
 
   .btn-mobile-menu.is-open & {
     opacity: 1;
-  }
+    }
 
   @include respond-to('large') {
     display: none;
