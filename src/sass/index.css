@@ -2001,6 +2001,7 @@ source {
   padding-top: 60px;
   padding-bottom: 40px;
   background: linear-gradient(180deg, var(--main-bg-color) 367px, var(--secondary-bg-color) 0);
+
 }
 @media (min-width: 768px) {
   .contacts__section {
@@ -2552,6 +2553,9 @@ source {
   border-radius: 50%;
   border-color: transparent;
   background: white;
+}
+.products__btn:hover, .products__btn:focus {
+  background-color: var(--main-btn-hover-bg-color);
 }
 
 .products__icon {
