@@ -1,7 +1,6 @@
 .hero {
     position: relative;
-
-
+   
     top: 0;
     left: 0;
 
@@ -27,6 +26,7 @@
 
     &__bcg {
         background-color: var(--complementary-bg-color);
+        
 
         width: 320px;
         height: 502px;
@@ -40,7 +40,8 @@
             
                 @media screen and (min-width: 1200px) {
                     width: 100vw;
-                    height: 664px;
+                    height: 757px;
+                    padding-top: 93px;
                 }
 
     }
