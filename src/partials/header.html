@@ -27,11 +27,11 @@
     </nav>
 
 
-    <button class="btn-mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
-      type="button" aria-label="Mobile menu switch">
+    <button class="btn-mobile-menu"
+      type="button" data-menu-button>
       <svg class="btn-mobile-menu__icon" width="20" height="12">
-        <use class="mobile-menu__burger js-open-menu" href="./images/icons.svg#icon-Burger"></use>
-        <use class="mobile-menu__close js-close-menu" href="./images/icons.svg#icon-close">
+        <use class="btn-mobile-menu__burger" href="./images/icons.svg#icon-Burger"></use>
+        <use class="btn-mobile-menu__close" href="./images/icons.svg#icon-close">
         </use>
       </svg>
     </button>
@@ -47,7 +47,7 @@
 
 <!-- Мобільне меню  -->
 
-<div class="mobile-menu js-menu-container" id="mobile-menu">
+<div class="mobile-menu" data-menu>
   <button class="mobile-menu__button button" aria-label="Left Align"type="button">
     <span>Buy now</span>
     <svg class="button__icon" width="10" height="10">
