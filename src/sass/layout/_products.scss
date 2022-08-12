@@ -248,6 +248,11 @@
     border-radius: 50%;
     border-color: transparent;
     background: white;
+
+    &:hover,
+        &:focus {
+            background-color: var(--main-btn-hover-bg-color);
+        }
 }
 
 .products__icon {
