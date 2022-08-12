@@ -1,66 +1,92 @@
-<section class="hero">
-    
+<section class="hero__bcg">
+    <div class="hero">
         <h1 class="hero__title"><span class="hero__title--white">ice cream <br>made with</span><br>
             <span class="hero__title--dark">passion</span>
         </h1>
 
-        <img src="./images/icons.svg#plus" alt="plus" class="hero__svg">
 
-        <div class="circle"></div>
-        <picture class="hero__thumb">
-            <source media="(min-width: 1200px)" srcset="./images/desktop/big_ice_cream.webp 1x,
-                                                            ./images/desktop/big_ice_cream@2x.webp 2x
-                                                            " type="image/webp">
-            <source media="(min-width: 768px)" srcset="./images/tablet/big_ice_cream.webp 1x,
-                                                            ./images/tablet/big_ice_cream@2x.webp 2x
-                                                            " type="image/webp">
-            <source media="(max-width: 767px)" srcset="./images/mobile/big_ice_cream.webp 1x,
-                                                            ./images/mobile/big_ice_cream@2x.webp 2x
-                                                            " type="image/webp">
-            <img src="./images/desktop/big_ice_cream.png" alt="icecream">
-        </picture>
-        <ul class="btns">
-            <li class="btns__item">
-                <a  class="button btn__hero btn__hero--red" href="#products">
-                    Products
-                </a>
-            </li>
-            <li class="btns__item">
-                <a  class="button btn__hero btn__hero--light" href="#made">
-                    How it’s made?
-                </a>
-            </li>
-        </ul>
-        <picture class="hero__girl">
-            <source media="(min-width: 1200px)" srcset="./images/desktop/tasty.webp 1x,
-                                                            ./images/desktop/tasty@2x.webp 2x
-                                                           
-                                                            " type="image/webp">
-            <source media="(min-width: 768px)" srcset="./images/tablet/tasty.webp 1x,
-                                                            ./images/tablet/tasty@2x.webp 2x
-                                                         
-                                                            " type="image/webp">
-            <img src="./images/tablet/tasty.png" alt="girl with icecream">
-        </picture>
+  <img src="./images/icons.svg#plus" alt="plus" class="hero__svg" />
 
-        <picture class="hero__milk">
-            <source media="(min-width: 1200px)" srcset="./images/desktop/milk_in_decanter.webp 1x,
-                                                            ./images/desktop/milk_in_decanter@2x.webp 2x
-                                                          
-                                                            " type="image/webp">
-            <source media="(min-width: 768px)" srcset="./images/tablet/milk_in_decanter.webp 1x,
-                                                            ./images/tablet/milk_in_decanter@2x.webp 2x
-                                                           
-                                                            " type="image/webp">
-            <img src="./images/desktop/milk_in_decanter.png" alt="milk in decanter">
-        </picture>
+  <div class="circle"></div>
+  <picture class="hero__thumb animate__animated animate__heartBeat">
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./images/desktop/big_ice_cream.webp    1x,
+        ./images/desktop/big_ice_cream@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/tablet/big_ice_cream.webp    1x,
+        ./images/tablet/big_ice_cream@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/mobile/big_ice_cream.webp    1x,
+        ./images/mobile/big_ice_cream@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <img src="./images/desktop/big_ice_cream.png" alt="icecream" />
+  </picture>
+  <ul class="btns">
+    <li class="btns__item">
+      <a class="button btn__hero btn__hero--red" href="#products"> Products </a>
+    </li>
+    <li class="btns__item">
+      <a class="button btn__hero btn__hero--light" href="#made">
+        How it’s made?
+      </a>
+    </li>
+  </ul>
+  <picture class="hero__girl animate__animated animate__heartBeat">
+    <source
+      media="(min-width: 1200px)"
+      srcset="./images/desktop/tasty.webp 1x, ./images/desktop/tasty@2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/tablet/tasty.webp 1x, ./images/tablet/tasty@2x.webp 2x"
+      type="image/webp"
+    />
+    <img src="./images/tablet/tasty.png" alt="girl with icecream" />
+  </picture>
 
-        <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        </p>
-        <a class="hero__arrow" href="#about">
-            <img src="./images/arrow.png" alt="arrow">
-        </a>
+  <picture class="hero__milk">
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./images/desktop/milk_in_decanter.webp    1x,
+        ./images/desktop/milk_in_decanter@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/tablet/milk_in_decanter.webp    1x,
+        ./images/tablet/milk_in_decanter@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <img src="./images/desktop/milk_in_decanter.png" alt="milk in decanter" />
+  </picture>
+
+  <p class="hero__text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et
+  </p>
+  <a class="hero__arrow" href="#about">
+    <img src="./images/arrow.png" alt="arrow" />
+  </a>
+
 
         <ul class="hero__group">
             <li class="hero__group-item">
@@ -70,5 +96,6 @@
                 <p class="hero__group-text">23</p>
             </li>
         </ul>
-    
+    </div>
 </section>
+
