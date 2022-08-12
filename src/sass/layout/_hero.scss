@@ -11,9 +11,6 @@
     
     overflow: hidden;
 
-   
-
-
     @media screen and (min-width: 768px) {
         width: 768px;
         height: 416px;
@@ -29,9 +26,9 @@
         background-color: var(--complementary-bg-color);
 
         width: 320px;
-            height: 502px;
+        height: 502px;
         
-            margin: 0 auto;
+        margin: 0 auto;
 
             @media screen and (min-width: 768px) {
                     width: 768px;
