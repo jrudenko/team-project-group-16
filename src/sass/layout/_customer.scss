@@ -1,118 +1,3 @@
-// .swiper-container-pointer-events {
-//     touch-action: pan-y;
-// }
-
-// .swiper-container {
-//     margin-left: auto;
-//     margin-right: auto;
-//     position: relative;
-//     overflow: hidden;
-//     list-style: none;
-//     padding: 0;
-//     z-index: 1;
-// }
-
-// .swiper-wrapper {
-//     position: relative;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     display: flex;
-//     transition-property: transform;
-//     box-sizing: content-box;
-// }
-
-// .customer__item {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     color: var(--color-design-black);
-// }
-
-// .swiper-slide {
-//     flex-shrink: 0;
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
-//     transition-property: transform;
-// }
-
-// .customer__wrapper {
-//     margin-bottom: 30px;
-//     padding: 43px 50px 20px;
-//     background-color: var(--bg-quote);
-//     min-width: 280px;
-//     z-index: -1;
-// }
-
-// .customer__text {
-//     position: relative;
-//     font-weight: 500;
-//     font-size: 12px;
-//     line-height: 2.58;
-//     text-align: center;
-//     letter-spacing: .04em;
-//     background-image: linear-gradient(0deg, #e1e1e1 1.61%, transparent 0, transparent 50%, #e1e1e1 0, #e1e1e1 51.61%, transparent 0, transparent);
-//     background-size: 62px 62px;
-//     z-index: 1;
-// }
-
-// .customer__text:before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     top: -14px;
-//     left: 10px;
-//     width: 54px;
-//     height: 40px;
-//     background-image: url(/src/images/icons.svg#quotes);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     z-index: -1;
-// }
-
-// .customer__name {
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 186%;
-//     text-align: center;
-//     margin-bottom: 30px;
-// }
-
-// .swiper-pagination {
-//     position: absolute;
-//     text-align: center;
-//     transition: opacity .3s;
-//     transform: translateZ(0);
-//     z-index: 10;
-// }
-
-// .customer .customer-reviews__paginationbullets {
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-// }
-
-// .customer-reviews__dots {
-//     display: inline-block;
-//     margin: 0 6px;
-//     border-radius: 50%;
-//     width: 12px;
-//     height: 12px;
-//     background-color: #d9d9d9;
-// }
-
-// .customer-reviews__dots--active {
-//     background-image: url(/src/images/icons.svg#home);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     border-radius: 0;
-//     background-color: transparent;
-//     width: 13px;
-//     height: 13px;
-// }
-
-
     .container {
             width: 100%;
             padding-left: 20px;
@@ -318,3 +203,95 @@
 }
 
 
+// слайд
+
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+    position: relative;
+}
+
+.slider__container {
+    overflow: hidden;
+}
+
+.slider__wrapper {
+     overflow: hidden; 
+}
+
+.slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+    transition: none;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background: rgb(0 0 0 / 20%);
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider__control_hide {
+    display: none;
+}
+
+.slider__control[data-slide="prev"] {
+    left: 0;
+}
+
+.slider__control[data-slide="next"] {
+    right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(0 0 0 / 30%);
+    outline: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
