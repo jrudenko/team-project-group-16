@@ -8,11 +8,11 @@
     var(--secondary-bg-color) 0
   );
 
-  @media screen and (min-width: 768px) {
+  @include respond-to('medium') {
     padding-top: 120px;
   }
 
-  @media screen and (min-width: 1200px) {
+    @include respond-to('large') {
     padding-bottom: 120px;
     background: linear-gradient(
       180deg,
@@ -96,7 +96,7 @@
     width: 130px;
     background: var(--additional-bg-color-shake);
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
       font-size: 16px;
       line-height: 30px;
     }
@@ -195,9 +195,8 @@
 }
 
 .contacts-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
+  background-color: var(--accent);
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
