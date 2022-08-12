@@ -6,17 +6,17 @@
 
     width: 100%;
 
-    @media screen and (min-width: 480px) {
+    @include respond-to('small') {
         max-width: 480px;
     }
 
-    @media screen and (min-width: 768px) {
+        @include respond-to('medium') {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         max-width: 1200px;
         padding-left: 16px;
         padding-right: 16px;
@@ -45,12 +45,12 @@
 
     color: var(--secondary-title-color);
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         font-size: 26px;
         line-height: 1.15;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         font-size: 34px;
         line-height: 1.13;
     }
@@ -58,11 +58,11 @@
     &--position {
         margin-bottom: 15px;
 
-        @media screen and (min-width: 768px) {
+        @include respond-to('medium') {
             margin-bottom: 18px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
             margin-bottom: 16px;
         }
     }
@@ -81,11 +81,11 @@
     color: var(--accent-color);
 
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         font-size: 48px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         font-size: 66px;
         line-height: 1.14;
     }
@@ -93,7 +93,7 @@
     &--position {
         margin-bottom: 15px;
 
-        @media screen and (min-width: 768px) {
+        @include respond-to('medium') {
             margin-bottom: 20px;
         }
     }
@@ -112,7 +112,7 @@
     color: var(--secondary-text-color);
 
 
-    @media screen and (min-width: 1200px) {
+    @include respond-to('large') {
         font-size: 34px;
         line-height: 1.13;
     }
@@ -136,11 +136,11 @@
 
     color: var(--secondary-text-color);
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         line-height: 176%;
     }
 
-    @media screen and (min-width: 1200px) {
+     @include respond-to('large') {
         margin-bottom: 60px;
 
         font-size: 16px;
@@ -158,11 +158,11 @@
     background: white;
     box-shadow: -20px 0 0 white, 20px 0 0 white;
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         top: 35%;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         top: 40%;
     }
 
@@ -171,7 +171,7 @@
 
 // products__list
 .products__list {
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         display: flex;
         flex-wrap: wrap;
     }
@@ -184,12 +184,12 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+        @include respond-to('medium') {
         padding-top: 138px;
         width: 224px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         padding-top: 261px;
         min-width: 368px;
     }
@@ -200,7 +200,7 @@
             margin-right: 16px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
             margin-right: 32px;
         }
     }
@@ -219,7 +219,7 @@
     }
 
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         padding: 165px 61px 60px 61px;
     }
 
@@ -264,7 +264,7 @@
     width: 280px;
     height: 280px;
 
-    background-image: url(../images/mobile/ice_cream.png);
+    background-image: url(../images/mobile/ice_cream.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 280px 280px;
@@ -275,7 +275,7 @@
         background-size: 224px 224px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         top: -32px;
         width: 368px;
         height: 368px;
@@ -287,7 +287,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .products__subtitle--ice-crem::before {
-        background-image: url(../images/mobile/ice_cream@2x.png);
+        background-image: url(../images/mobile/ice_cream@2x.webp);
     }
 }
 
@@ -301,18 +301,18 @@
     width: 280px;
     height: 280px;
 
-    background-image: url(../images/mobile/ice_coffee.png);
+    background-image: url(../images/mobile/ice_coffee.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 280px 280px;
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         width: 224px;
         height: 224px;
         background-size: 224px 224px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include respond-to('large') {
         top: -32px;
         width: 368px;
         height: 368px;
@@ -326,7 +326,7 @@
 
 
     .products__subtitle--coffee::before {
-        background-image: url(../images/mobile/ice_coffee@2x.png);
+        background-image: url(../images/mobile/ice_coffee@2x.webp);
     }
 }
 
@@ -340,18 +340,18 @@
     width: 280px;
     height: 280px;
 
-    background-image: url(../images/mobile/milkshake.png);
+    background-image: url(../images/mobile/milkshake.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 280px 280px;
 
-    @media screen and (min-width: 768px) {
+    @include respond-to('medium') {
         width: 224px;
         height: 224px;
         background-size: 224px 224px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include respond-to('large') {
         top: -32px;
         width: 368px;
         height: 368px;
@@ -363,6 +363,6 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .products__subtitle--shake::before {
-        background-image: url(../images/mobile/milkshake@2x.png);
+        background-image: url(../images/mobile/milkshake@2x.webp);
     }
 }
