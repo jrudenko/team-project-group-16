@@ -627,7 +627,6 @@ a {
 
 .header {
   background-color: var(--complementary-bg-color);
-  justify-content: space-between;
   width: 100vw;
   display: flex;
 }
@@ -636,13 +635,16 @@ a {
   padding-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100vw;
+  min-width: 320px;
   display: flex;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .header__container {
     justify-content: space-between;
+    width: 768px;
     padding: 32px;
   }
 }
@@ -718,6 +720,24 @@ a {
 }
 
 .hero {
+  background-color: var(--complementary-bg-color);
+  width: 320px;
+  height: 502px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 100vw;
+    height: 416px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 664px;
+  }
+}
+
+.hero__container {
   position: relative;
   top: 0;
   left: 0;
@@ -727,32 +747,14 @@ a {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero__container {
     width: 768px;
     height: 416px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero__container {
     width: 1200px;
-    height: 664px;
-  }
-}
-.hero__bcg {
-  background-color: var(--complementary-bg-color);
-  width: 320px;
-  height: 502px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .hero__bcg {
-    width: 768px;
-    height: 416px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__bcg {
-    width: 100vw;
     height: 664px;
   }
 }
@@ -1996,31 +1998,12 @@ source {
   }
 }
 
-<<<<<<< Updated upstream
-.contacts__section {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background: linear-gradient(180deg, var(--main-bg-color) 367px, var(--secondary-bg-color) 0);
-
-}
-@media (min-width: 768px) {
-  .contacts__section {
-    padding-top: 120px;
-  }
-}
-@media (min-width: 1200px) {
-  .contacts__section {
-    padding-bottom: 120px;
-    background: linear-gradient(180deg, var(--main-bg-color) 217px, var(--secondary-bg-color) 0);
-  }
-=======
 .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
->>>>>>> Stashed changes
 }
 @media (min-width: 480px) {
   .container {
