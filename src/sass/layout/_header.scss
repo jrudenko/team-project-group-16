@@ -1,6 +1,5 @@
 .header {
-  background-color: var(--complementary-bg-color);
-  justify-content: space-between;     
+  background-color: var(--complementary-bg-color);     
   width: 100vw;
   display: flex; 
   }
@@ -16,9 +15,11 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  
+
+    
    @include respond-to('medium') {     
-    justify-content: space-between;      
+    justify-content: space-between; 
+    width: 768px;
     padding: 32px;      
     }
   
