@@ -1,16 +1,48 @@
 .hero {
     position: relative;
-    top: 0; 
-    width: 100vw;
-    overflow: hidden;
-    background-color: var(--complementary-bg-color);
 
-    @media screen and (min-width: 768px) {      
+
+    top: 0;
+    left: 0;
+
+    width: 320px;
+    height: 502px;
+
+    margin: 0 auto;
+    
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
         height: 416px;
     }
+    
 
-    @media screen and (min-width: 1200px) {       
+
+    @media screen and (min-width: 1200px) {  
+        width: 1200px;     
         height: 664px;
+
+    }
+
+    &__bcg {
+        background-color: var(--complementary-bg-color);
+
+        width: 320px;
+        height: 502px;
+        
+        margin: 0 auto;
+            @media screen and (min-width: 768px) {
+                    width: 768px;
+                    height: 416px;
+            
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    width: 100vw;
+                    height: 664px;
+                }
+
     }
 }
 
