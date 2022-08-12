@@ -61,8 +61,7 @@
   transition: var(--timing-transition);
 
   @media screen and (min-width: 768px) {
-    //   transform: translateX(207%);
-    //   transition: var(--timing-transition);
+
   }
 }
 
@@ -94,9 +93,7 @@
   margin-left: auto;
   width: 20px;
 
-  // .mobile-menu.is-open & {
-  //     z-index: 10;
-  //     }
+ 
 
   .btn-mobile-menu.is-open & {
     opacity: 0;
@@ -118,6 +115,7 @@
   margin-top: 20px;
   margin-bottom: 26px;
   margin-left: auto;
+  z-index: 100000;
 
   .btn-mobile-menu.is-open & {
     opacity: 1;
