@@ -68,6 +68,13 @@
     }
   }
 }
+.header__container >.button{
+  display: none;
+
+  @include respond-to('medium') {
+      display: block;
+  }
+}
 
 .button--header {
   display: none;
@@ -96,6 +103,8 @@
   padding: 20px;  
   opacity: 0; 
   transition: var(--timing-transition);
+
+  transform: translateX(0);
 
     @include respond-to('small') { 
     transition: var(--timing-transition);
@@ -183,7 +192,7 @@
 
 
 .btn-mobile-menu__close {
-  opacity: 0;
+  opacity: 1;
   fill: var(--secondary-text-color);
   background-color: transparent;
   border: none;
@@ -193,7 +202,7 @@
   margin-left: auto;
 
   .btn-mobile-menu__burger.is-open & {
-    opacity: 1;
+    opacity: 0;
   }
 
   @include respond-to('large') {
