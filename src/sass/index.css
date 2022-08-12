@@ -713,7 +713,6 @@ a {
   height: 502px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: var(--complementary-bg-color);
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -724,6 +723,24 @@ a {
 @media screen and (min-width: 1200px) {
   .hero {
     width: 1200px;
+    height: 664px;
+  }
+}
+.hero__bcg {
+  background-color: var(--complementary-bg-color);
+  width: 320px;
+  height: 502px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__bcg {
+    width: 768px;
+    height: 416px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__bcg {
+    width: 100vw;
     height: 664px;
   }
 }

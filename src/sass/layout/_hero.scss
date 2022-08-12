@@ -11,7 +11,7 @@
     
     overflow: hidden;
 
-    background-color: var(--complementary-bg-color);
+   
 
 
     @media screen and (min-width: 768px) {
@@ -23,7 +23,26 @@
     @media screen and (min-width: 1200px) {
         width: 1200px;
         height: 664px;
+    }
 
+    &__bcg {
+        background-color: var(--complementary-bg-color);
+
+        width: 320px;
+            height: 502px;
+        
+            margin: 0 auto;
+
+            @media screen and (min-width: 768px) {
+                    width: 768px;
+                    height: 416px;
+            
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    width: 100vw;
+                    height: 664px;
+                }
     }
 }
 
