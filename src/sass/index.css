@@ -761,27 +761,25 @@ a {
   left: 0;
   width: 320px;
   height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  background-color: var(--complementary-bg-color);
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    width: 100vw;
     height: 416px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
     height: 664px;
   }
 }
 
 .hero__container {
-  background-color: var(--complementary-bg-color);
   width: 320px;
   height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .hero__container {
@@ -791,7 +789,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
-    width: 100vw;
+    width: 1200px;
     height: 664px;
   }
 }

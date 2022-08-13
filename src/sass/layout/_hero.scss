@@ -1,37 +1,38 @@
 .hero {
-    position: relative;
-    top: 0;
-    left: 0;
-
-
     width: 320px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    background-color: var(--complementary-bg-color);
 
-    overflow: hidden;
+  
 
     
 
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        width: 100vw;
         height: 416px;
 
         
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+       
         height: 664px;
 
     }
 }
 
 .hero__container {
-    background-color: var(--complementary-bg-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    
     width: 320px;
     height: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
             width: 768px;
@@ -41,7 +42,7 @@
         }
     
         @media screen and (min-width: 1200px) {
-            width: 100vw;
+            width: 1200px;
             height: 664px;
     
         }
