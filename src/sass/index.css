@@ -756,12 +756,12 @@ a {
 }
 
 .hero {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 320px;
   height: 500px;
   background-color: var(--complementary-bg-color);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -776,6 +776,9 @@ a {
 }
 
 .hero__container {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 320px;
   height: 500px;
   margin-left: auto;
@@ -899,6 +902,11 @@ a {
 .hero__girl {
   display: none;
 }
+.hero__girl > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .hero__girl {
     display: block;
@@ -914,6 +922,7 @@ a {
     top: 423px;
     left: 880px;
     width: 304px;
+    height: 241px;
   }
 }
 
@@ -926,16 +935,59 @@ a {
     position: absolute;
     bottom: 16px;
     left: 32px;
-    width: 213px;
+    width: 152px;
+    -webkit-animation-name: rocking;
+            animation-name: rocking;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__milk {
     top: 380px;
     left: 16px;
+    width: 213px;
+  }
+}
+.hero__milk > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes rocking {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(0deg);
   }
 }
 
+@keyframes rocking {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+}
 .hero__text {
   display: none;
 }
@@ -982,6 +1034,8 @@ a {
   .hero__arrow {
     top: 555px;
     left: 232px;
+    width: 26px;
+    height: 26px;
   }
 }
 .hero__arrow:hover {
@@ -998,13 +1052,25 @@ a {
     top: 94px;
     right: 42px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group {
+    top: 156px;
+    right: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__group-item:not(:last-child) {
     margin-bottom: 26px;
   }
+}
+@media screen and (min-width: 768px) {
   .hero__group-item {
     position: relative;
     z-index: 1;
   }
+}
+@media screen and (min-width: 768px) {
   .hero__group-item:first-child::before {
     content: "cafes";
     position: absolute;
@@ -1016,6 +1082,13 @@ a {
     line-height: 1.1;
     color: #fff;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group-item:first-child::before {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__group-item:last-child::before {
     content: "food trucks";
     position: absolute;
@@ -1028,6 +1101,14 @@ a {
     width: 43px;
     color: #fff;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group-item:last-child::before {
+    font-size: 14px;
+    width: 74px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__group-item::after {
     content: "";
     position: absolute;
@@ -1039,12 +1120,26 @@ a {
     border-radius: 50%;
     background-color: #fff;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group-item::after {
+    right: -10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__group-text {
     font-family: Titan One;
     font-size: 28px;
     font-weight: 400;
     line-height: 1.1;
     color: #D41443;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero__group-text {
+    font-size: 46px;
   }
 }
 
@@ -1070,24 +1165,10 @@ a {
 .btns__item:not(:last-child) {
   margin-right: 8px;
 }
-
-.button {
-  display: inline-block;
-  align-items: center;
-  vertical-align: middle;
-  padding: 0;
-  height: 44px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  color: var(--accent-color);
-  background-color: var(--main-bg-color);
-  border: 1px solid transparent;
-  border-radius: 22px;
-  cursor: pointer;
-  transition: background-color var(--timing-transition);
+@media screen and (min-width: 1200px) {
+  .btns__item:not(:last-child) {
+    margin-right: 12px;
+  }
 }
 
 .btn__hero {
@@ -1099,17 +1180,34 @@ a {
   font-weight: 400;
   line-height: 1.1;
 }
+@media screen and (min-width: 1200px) {
+  .btn__hero {
+    font-size: 14px;
+  }
+}
 
 .btn__hero--red {
   width: 62px;
   color: #fff;
   background-color: #D41443;
 }
+@media screen and (min-width: 1200px) {
+  .btn__hero--red {
+    width: 107px;
+    height: 40px;
+  }
+}
 
 .btn__hero--light {
   width: 82px;
   color: #D41443;
   background-color: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .btn__hero--light {
+    width: 138px;
+    height: 40px;
+  }
 }
 
 .container {

@@ -4,10 +4,10 @@
     
     background-color: var(--complementary-bg-color);
 
-  
+    overflow: hidden;
 
-    
-
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
         width: 100vw;
@@ -158,6 +158,11 @@
 .hero__girl {
     display: none;
 
+    &>img {
+        object-fit: cover;
+        width: 100%;
+    }
+
     @media screen and (min-width: 768px) {
         display: block;
 
@@ -167,6 +172,8 @@
 
         width: 190px;
         height: 150px;
+
+       
     }
 
         @media screen and (min-width: 1200px) {
@@ -174,6 +181,7 @@
             left: 880px;
 
             width: 304px;
+            height: 241px;
         }
 }
 
@@ -182,18 +190,37 @@
 
     @media screen and (min-width: 768px) {
         display: block;
-
+        
         position: absolute;
         bottom: 16px;
         left: 32px;
 
-        width: 213px;
+        width: 152px;
+
+        animation-name: rocking;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 
     @media screen and (min-width: 1200px) {
         top: 380px;
         left: 16px;
+
+        width: 213px;
     }
+    
+    &>img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@keyframes rocking {
+    0% { transform: rotate(0deg);}
+    15% {transform: rotate(10deg);}
+    30% {transform: rotate(-10deg);}
+    45% {transform: rotate(0deg);}
 }
 
 .hero__text {
@@ -249,6 +276,9 @@
     @media screen and (min-width: 1200px) {
         top: 555px;
         left: 232px;
+
+        width: 26px;
+        height: 26px;
     }
 
     &:hover {
@@ -265,6 +295,14 @@
         position: absolute;
         top: 94px;
         right: 42px;
+        
+     @media screen and (min-width: 1200px) {
+        top: 156px;
+        right: 34px;
+     }
+    
+        
+    
 
         &-item:not(:last-child) {
             margin-bottom: 26px;
@@ -287,6 +325,10 @@
             line-height: 1.1;
 
             color: #fff;
+
+            @media screen and (min-width: 1200px) {
+                    font-size: 14px;
+                }
         }
 
         &-item:last-child::before {
@@ -303,6 +345,11 @@
             width: 43px;
 
             color: #fff;
+
+            @media screen and (min-width: 1200px) {
+                    font-size: 14px;
+                    width: 74px;
+                }
         }
 
         &-item::after {
@@ -317,6 +364,13 @@
             height: 16px;
             border-radius: 50%;
             background-color: #fff;
+
+            @media screen and (min-width: 1200px) {
+                    right: -10px;
+
+                    width: 30px;
+                    height: 30px;
+                }
         }
 
         &-text {
@@ -326,6 +380,10 @@
             line-height: 1.1;
 
             color: #D41443;
+
+            @media screen and (min-width: 1200px) {
+                    font-size: 46px;
+                }
         }
     }
 }
@@ -355,31 +413,13 @@
 
 .btns__item:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+            margin-right: 12px;
+        }
+
 }
 
-.button {
-    display: inline-block;
-    align-items: center;
-    vertical-align: middle;
-    padding: 0;
-
-    height: 44px;
-
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-
-    color: var(--accent-color);
-    background-color: var(--main-bg-color);
-    border: 1px solid transparent;
-    border-radius: 22px;
-
-    cursor: pointer;
-
-    transition: background-color var(--timing-transition);
-}
 
 .btn__hero {
     display: flex;
@@ -390,16 +430,33 @@
     font-size: 8px;
     font-weight: 400;
     line-height: 1.1;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        }
+    
 }
 
 .btn__hero--red {
     width: 62px;
     color: #fff;
     background-color: #D41443;
+
+    @media screen and (min-width: 1200px) {
+            width: 107px;
+            height: 40px;
+        }
+    
 }
 
 .btn__hero--light {
     width: 82px;
+
     color: #D41443;
     background-color: #fff;
+
+    @media screen and (min-width: 1200px) {
+        width: 138px;
+        height: 40px;
+    }
 }
