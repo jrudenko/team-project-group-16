@@ -200,8 +200,9 @@
 
         animation-name: rocking;
         animation-duration: 3s;
+        animation-delay: 3s;
         animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 3;
     }
 
     @media screen and (min-width: 1200px) {
