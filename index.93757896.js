@@ -1,0 +1,2 @@
+function windowLoad(){var n,o;(o=n||document.querySelectorAll("[data-digits-counter]"))&&o.forEach((function(n){!function(n){var o=null,i=4e3,e=parseInt(n.innerHTML),t=0,a=function(r){o||(o=r);var d=Math.min((r-o)/i,1);n.innerHTML=Math.floor(d*(t+e)),d<1&&window.requestAnimationFrame(a)};window.requestAnimationFrame(a)}(n)}))}window.addEventListener("load",windowLoad);
+//# sourceMappingURL=index.93757896.js.map
